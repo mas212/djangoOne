@@ -18,13 +18,13 @@ from django.urls import path
 
 from page import views
 from categories.views import categori_view
-from product.views import productView
-from catalog.views import catalogView
+from product.views import product
+from catalog.views import catalog
 
 urlpatterns = [
     path('', views.home_view, name='home'),
     path('categori/',categori_view),
-    path('product/', productView),
-    path('catalog/', catalogView),
+    path('product/', product),
+    path('catalog/', catalog),
     path('admin/', admin.site.urls),
 ]

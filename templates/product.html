@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Product template</h1>
+    {{ name }} <br>{{ price }}
+    {% for list in fasilities %}
+        <li>{{ list }}</li>
+    {% endfor %}
+{% endblock %}
